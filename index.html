@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payooo Mobile Bank</title>
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- tailwindcss cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#f4f5f7] h-[100vh] flex flex-col justify-center items-center">
+    <div class="h-[130px] w-[350px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+        <img src="./assets/Group.png" alt="">
+    </div>
+    <form class="w-[350px] bg-white p-8 rounded-3xl">
+        <div>
+            <label class="font-semibold mt-5" for="">Mobile Number</label> <br>
+            <input id="mobile-number" type="text" placeholder="Enter your number" class="input mt-2 bg-[#f4f5f7] rounded-3xl" />
+        </div>
+        <div class="mt-5">
+            <label class="font-semibold mt-5" for="">4 Digit Pin</label><br>
+            <input id="pin-number" type="text" placeholder="Enter 4 Digit Pin" class="input mt-2 bg-[#f4f5f7] rounded-3xl" />
+        </div>
+        <button  id="loginButton" class="btn w-full bg-[#0874f2] text-white mt-4 rounded-3xl">Login</button>
+    </form>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
