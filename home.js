@@ -1,3 +1,31 @@
+//reuseable function for input value number.
+function getInputValueNumber(id){
+    const inputField = document.getElementById(id);
+    const inputFieldValue = inputField.value;
+    const inputFieldValueNumber = parseInt(inputFieldValue);
+    return inputFieldValueNumber;
+}
+//reuseable input value.
+function getInputValue(id){
+    const inputField = document.getElementById(id);
+    const inputFieldValue = inputField.value;
+    return inputFieldValue;
+}
+
+// reuseable function to get innertext
+function getInnerText(id){
+const element = document-getElementById("available-balance")
+const elementValue = element. innerText
+const elementValueNumber = parseInt(elementValue)
+return elementValueNumber
+}
+//reuseable function to set innerText
+function setInnerText(value){
+const availableBalanceElement = document-getElementById("available-balance")
+availableBalanceElement.innerText = value
+}
+
+
 //logout button functionality
 document.getElementById('log-out-btn').addEventListener('click', function(){
     window.location.href="./index.html";
@@ -11,8 +39,10 @@ document.getElementById('addMoneyBtn')
 
     const bank =document.getElementById('bank').value ;
     const accountNumber = document.getElementById('account-number').value;
-    const addAmount = parseInt(document.getElementById('add-amount').value);
-    const addPin = parseInt(document.getElementById('add-pin').value);
+    // const addAmount = parseInt(document.getElementById('add-amount').value);
+    const addAmount = getInputValueNumber('add-amount');
+    // const addPin = parseInt(document.getElementById('add-pin').value);
+    const addPin = getInputValueNumber('add-pin');
 
     const availableBalance = parseInt(document.getElementById('available-balance').innerText);
 
