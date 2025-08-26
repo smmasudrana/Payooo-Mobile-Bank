@@ -34,32 +34,32 @@
         <div class="p-3">
             <h1 class="text-3xl font-bold">🔥 Welcome to Payooo!</h1>
             <p class="text-lg text-[#838383] mt-2">Enjoy easy and convenient financial services with us. Cashout charge
-                is low and </p>
+                is low.</p>
         </div>
 
         <!-- Home box section  -->
         <div class="p-3 grid grid-cols-3 gap-2">
-            <div id="add-money-btn" class="border-2 border-[#e6e6e6] text-center p-3 rounded-md">
+            <div id="add-money-btn" class="form-box border-2 border-[#e6e6e6] text-center p-3 rounded-md">
                 <img class="mx-auto" src="./assets/wallet1.png" alt="">
                 <h2 class="mt-2">Add Money</h2>
             </div>
-            <div id="cashout-btn" class="border-2 border-[#e6e6e6] text-center p-3 rounded-md">
+            <div id="cashout-btn" class="form-box border-2 border-[#e6e6e6] text-center p-3 rounded-md">
                 <img class="mx-auto" src="./assets/send1.png" alt="">
                 <h2 class="mt-2">Cashout</h2>
             </div>
-            <div class="border-2 border-[#e6e6e6] text-center p-3 rounded-md">
+            <div id="transfer-btn" class="form-box border-2 border-[#e6e6e6] text-center p-3 rounded-md">
                 <img class="mx-auto" src="./assets/money1.png" alt="">
                 <h2 class="mt-2">Transfer Money</h2>
             </div>
-            <div class="border-2 border-[#e6e6e6] text-center p-3 rounded-md">
+            <div id="btn-for-bonus" class="form-box border-2 border-[#e6e6e6] text-center p-3 rounded-md">
                 <img class="mx-auto" src="./assets/bonus1.png" alt="">
                 <h2 class="mt-2">Get Bonus</h2>
             </div>
-            <div class="border-2 border-[#e6e6e6] text-center p-3 rounded-md">
+            <div class="form-box border-2 border-[#e6e6e6] text-center p-3 rounded-md">
                 <img class="mx-auto" src="./assets/purse1.png" alt="">
                 <h2 class="mt-2">Pay Bill</h2>
             </div>
-            <div class="border-2 border-[#e6e6e6] text-center p-3 rounded-md">
+            <div class="form-box border-2 border-[#e6e6e6] text-center p-3 rounded-md">
                 <img class="mx-auto" src="./assets/transaction1.png" alt="">
                 <h2 class="mt-2">Transactions</h2>
             </div>
@@ -69,7 +69,7 @@
 
     <div class="all-form-section">
         <!-- add money section  -->
-        <div id="add-money-parent" class="add-money-section max-w-lg mx-auto p-3 mt-5 ">
+        <div id="add-money-parent" class="form add-money-section max-w-lg mx-auto p-3 mt-5 ">
             <h1 class="text-xl font-bold mb-3">Add Money</h1>
             <form class="bg-white p-5 rounded-xl" action="">
                 <div>
@@ -102,7 +102,7 @@
         </div>
 
         <!-- Cashout section -->
-        <div style="display: none;" id="cashout-parent" class="max-w-lg mx-auto p-3 mt-5">
+        <div style="display: none;" id="cashout-parent" class="form max-w-lg mx-auto p-3 mt-5">
             <h1 class="text-xl font-bold mb-3">Cash Out</h1>
             <form class="bg-white p-5 rounded-xl" action="">
                 <div class="mt-4">
@@ -121,6 +121,44 @@
                         class="input w-full mt-2 bg-[#f4f5f7] rounded-3xl" />
                 </div>
                 <button id="withdraw-btn" class="btn w-full bg-[#0874f2] text-white mt-4 rounded-3xl">Add Money</button>
+            </form>
+        </div>
+
+
+        <!-- Transfer money -->
+        <div style="display: none;" id="transfer-parent" class="form max-w-lg mx-auto p-3 mt-5">
+            <h1 class="text-xl font-bold mb-3">Transfer Money</h1>
+            <form class="bg-white p-5 rounded-xl" action="">
+                <div class="mt-4">
+                    <label for="">User Account Number</label>
+                    <input id="transfer-acNumber" type="number" placeholder="Enter 11 digit account number"
+                        class="input w-full mt-2 bg-[#f4f5f7] rounded-3xl" />
+                </div>
+                <div class="mt-4">
+                    <label for="">Amount</label>
+                    <input id="transfer-amount" type="number" placeholder="Enter amount to transfer"
+                        class="input w-full mt-2 bg-[#f4f5f7] rounded-3xl" />
+                </div>
+                <div class="mt-4">
+                    <label for="">Pin Number</label>
+                    <input id="transfer-pin" type="password" placeholder="Enter 4 digit pin number"
+                        class="input w-full mt-2 bg-[#f4f5f7] rounded-3xl" />
+                </div>
+                <button id="sendNow-btn" class="btn w-full bg-[#0874f2] text-white mt-4 rounded-3xl">Send Now</button>
+            </form>
+        </div>
+
+
+        <!-- get bonus -->
+        <div style="display: none;" id="getBonus-parent" class="form max-w-lg mx-auto p-3 mt-5">
+            <h1 class="text-xl font-bold mb-3">Get Bonus</h1>
+            <form class="bg-white p-5 rounded-xl" action="">
+                <div class="mt-4">
+                    <label for="">Use 'masud10' get 500 extra.</label>
+                    <input id="bonus-coupon" type="text" placeholder="Enter your coupon"
+                        class="input w-full mt-2 bg-[#f4f5f7] rounded-3xl" />
+                </div>
+                <button id="getBonus-btn" class="btn w-full bg-[#0874f2] text-white mt-4 rounded-3xl">Get Bonus</button>
             </form>
         </div>
 
